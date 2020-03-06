@@ -30,3 +30,9 @@ type EntityType interface{}
 
 // Snapshot endpoint.
 type Snapshot interface{}
+
+// Investigation endpoint.
+type Investigation interface{}
+
+// Feeds endpoint.
+type Feeds interface{}
