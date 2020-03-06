@@ -12,12 +12,12 @@ Construct a new Anomali client, then use the various services on the client to
 access different parts of the Anomali API. For example:
 
 ```go
-client := qradar.NewClient(nil)
+client := goanomali.NewClient(nil)
 ```
 
 If you want to provide your own `http.Client`, you can do it :
 
 ```go
 httpClient := &http.Client{}
-client := qradar.NewClient(httpClient)
+client := goanomali.NewClient(httpClient)
 ```
