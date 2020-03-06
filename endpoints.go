@@ -21,3 +21,12 @@ type Endpoint struct {
 type Intelligence interface {
 	ListIntelligence(context.Context, string, int, int) (*IntelligenceResponse, error)
 }
+
+// IntelDetails endpoint.
+type IntelDetails interface{}
+
+// EntityType endpoint.
+type EntityType interface{}
+
+// Snapshot endpoint.
+type Snapshot interface{}
