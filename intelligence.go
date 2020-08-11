@@ -109,6 +109,10 @@ func (endpoint *Endpoint) ListIntelligence(ctx context.Context, query string, pe
 	}
 	defer resp.Body.Close()
 
+	if resp.StatusCode != 200 {
+		return nil, fmt.Errorf("wrong status code: %d", resp.StatusCode)
+	}
+
 	// Read the response
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
